@@ -1,0 +1,74 @@
+.item,
+.draggable-item,
+.draggable-item-horizontal
+    position: relative
+    display: flex
+    flex-direction: column
+    padding: 10px
+    margin: 8px
+    user-select: none
+    background-color: white
+    border: 1px solid transparent
+    border-left: 5px solid $clr-white
+    border-radius: 4px
+    transition: border-color 0.2s linear
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1)
+
+.drop-preview
+    position: relative
+    margin: 10px
+    background-color: $clr-white
+    border: 2px dashed rgba(0, 0, 0, 0.059) !important
+    border-radius: 4px
+
+    &::before
+        position: absolute
+        top: 50%
+        left: 50%
+        color: $clr-gray
+        content: ""
+        font-weight: bold
+        transform: translate(-50%, -50%)
+
+    &::after
+        position: absolute
+        top: 50%
+        left: 27%
+        width: 20px
+        height: 20px
+        content: ""
+        transform: translate(-50%, -50%)
+
+.prevent-drag
+    cursor: wait
+
+.ajs-dialog
+    margin: 0 !important
+    top: 50%
+    left: 50%
+    translate: -50% -50%
+
+.ajs-header
+    font-weight: bold
+
+.ajs-footer
+    padding: 10px !important
+
+.ajs-message
+    color: $clr-pure-white !important
+    font-weight: bold
+    width: 275px !important
+
+    .ajs-error
+        background-color: $danger !important
+
+    .ajs-success
+        background-color: $success !important
+
+@import "app.sass"
+@import "profile.sass"
+@import "home.sass"
+@import "tasks.sass"
+@import "kanban.sass"
+@import "calendar.sass"
+@import "settings.sass"

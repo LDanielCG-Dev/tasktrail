@@ -1,0 +1,78 @@
+extends layout
+
+block scripts
+    script(src="/js/tools.js" defer)  
+
+block content
+    header.hero.is-medium.has-background-primary-light
+        .hero-body
+            .container
+                .columns.is-vcentered
+                    .column 
+                        p.subtitle.has-text-primary.has-text-weight-semibold.is-family-secondary.is-uppercase.is-size-6= __("about.header.subtitle")
+                        h1.title.is-spaced.is-size-3-mobile.is-size-1-desktop= __("about.header.title")
+                        p.subtitle= __("about.header.description")
+
+                    .column
+                        figure.image.is-3by2
+                            img(src="media/images/about.svg" alt="about us" draggable="false")
+
+    main
+        section.section
+            .container
+                h1.title.is-size-4-mobile.is-size-2-desktop= __("about.main.team.title")
+                p.is-size-6-mobile.is-size-5-desktop.py-4= __("about.main.team.description")
+
+                .columns.is-multiline.is-align-items-start
+                    .column.is-one-third.is-flex.is-justify-content-center
+                        .card.is-flex.is-flex-direction-column.es-fullwidth.is-radiusless
+                            .card-content
+                                .media.is-justify-content-center.es-flex-direction-tablet.es-flex-direction-desktop.is-align-items-center
+                                    .media-left
+                                        figure.image.is-128x128
+                                            img(src='/media/images/jason.jpeg' alt="Jason" draggable="false")
+                                    .media-content.mt-3
+                                        p.title.is-4 Jason Londoño
+                                        p.subtitle.is-6= __("about.main.team.role.webDeveloper")
+                            .card-footer.is-flex-direction-column
+                                p.view-more.card-footer-item.has-text-white.is-primary.is-radiusless.is-clickable #{__("about.main.team.viewMore.button")} Jason
+                                .media-content
+                                    p.py-5.px-5.subtitle.is-6 
+                                        | Jason Londoño #{(__("about.main.team.viewMore.descriptionJason"))}
+
+                    .column.is-one-third.is-flex.is-justify-content-center
+                        .card.is-flex.is-flex-direction-column.es-fullwidth.is-radiusless
+                            .card-content
+                                .media.is-justify-content-center.es-flex-direction-tablet.es-flex-direction-desktop.is-align-items-center
+                                    .media-left
+                                        figure.image.is-128x128
+                                            img(src='/media/images/daniel.jpg' alt="Daniel" draggable="false")
+                                    .media-content.mt-3
+                                        p.title.is-4 Daniel Casado
+                                        p.subtitle.is-6= __("about.main.team.role.webDeveloper")
+                            .card-footer.is-flex-direction-column
+                                p.view-more.card-footer-item.has-text-white.is-primary.is-radiusless.is-clickable #{__("about.main.team.viewMore.button")} Daniel
+                                .media-content
+                                    p.py-5.px-5.subtitle.is-6 
+                                        | Daniel Casado #{(__("about.main.team.viewMore.descriptionDaniel"))}
+
+                    .column.is-one-third.is-flex.is-justify-content-center
+                        .card.is-flex.is-flex-direction-column.es-fullwidth.is-radiusless
+                            .card-content
+                                .media.is-justify-content-center.es-flex-direction-tablet.es-flex-direction-desktop.is-align-items-center
+                                    .media-left
+                                        figure.image.is-128x128.is-flex
+                                            img(src='/media/images/mario.jpg' alt="Mario" draggable="false")
+                                    .media-content.mt-3
+                                        p.title.is-4 Mario Sánchez
+                                        p.subtitle.is-6= __("about.main.team.role.webDeveloper")
+                            .card-footer.is-flex-direction-column
+                                p.view-more.card-footer-item.has-text-white.is-primary.is-radiusless.is-clickable #{__("about.main.team.viewMore.button")} Mario
+                                .media-content
+                                    p.py-5.px-5.subtitle.is-6 
+                                        | Mario Sánchez #{(__("about.main.team.viewMore.descriptionMario"))}
+
+block footer 
+    include footer
+
+    include cookies

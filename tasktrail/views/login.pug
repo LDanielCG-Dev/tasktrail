@@ -1,0 +1,52 @@
+extends layout
+
+block scripts 
+    script(src="https://unpkg.com/validator@latest/validator.min.js" defer) 
+    script(src="/js/forms.js" type="module" defer) 
+
+block content
+
+    .main.login.is-flex.is-justify-content-space-evenly
+
+        img.is-unselectable.no-pointerevents.blob(src="media/images/blob.svg" alt="blob" draggable="false")
+
+        form.form.login.is-radiusless.mx-5(action="" method="POST")
+            p.title= __("navigation.login")
+
+            if passwordChangedSuccess
+                .notification.is-success.px-4.py-2= __("login.passwordChanged")
+
+            .field 
+                label.label #{__("login.form.email")}:
+                .control.has-icons-left.has-icons-right
+                    input.input(type="email" name="email" placeholder=__("login.form.emailPlaceholder") data-input="email" value=email autofocus required)
+                    span.icon.is-small.is-left 
+                        i.fas.fa-envelope
+
+            .field 
+                label.label #{__("login.form.password")}:
+                .control.has-icons-left.has-icons-right
+                    input.input(type="password" name="password" placeholder=__("login.form.password") data-input="password" required)
+                    span.icon.is-small.is-left 
+                        i.fas.fa-sharp.fa-solid.fa-key
+
+            if error
+                .notification.is-danger.px-4.py-2= error
+
+            .field 
+                a.is-info(href="/recover")= __("login.forgotPassword")
+
+            .field
+                .control.has-text-centered
+                    button.button.is-primary.is-fullwidth= __("navigation.login")
+
+            .field
+                .control
+                    label.label #{__("login.question")} 
+                        a.is-info(href="/signup")= __("navigation.signup")
+
+            hr
+
+            a.button(href="/login/google")
+                i.fa-brands.fa-google
+                span.mx-2= __("login.providers.google")

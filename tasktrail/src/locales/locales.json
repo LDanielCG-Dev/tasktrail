@@ -1,0 +1,310 @@
+{
+    "en": {
+        "English": "English",
+        "Español": "Español",
+        "lang": "English",
+        "profile": {
+            "title": "👤 Profile",
+            "desc": "Here you can customize your profile.",
+            "group": "Profile",
+            "userData": {
+                "choosePic": "Choose Photo",
+                "userLabel": "Username",
+                "emailLabel": "Email",
+                "passLabel": "Password",
+                "changePass": "Change password",
+                "save": "Save",
+                "deleteAccount": {
+                    "button": "Delete account",
+                    "alertHeader": "Delete account",
+                    "alertMessage": "<p class='label'>Write your username to delete your account:</p> <input type='text' class='ajs-input input' placeholder='your username'>",
+                    "confirmationSuccess": "Account deleted.",
+                    "confirmationFail": "Please write your username."
+                }
+            }
+        },
+        "home": {
+            "menuTitle": "Home",
+            "title": "🏠 Home",
+            "desc": "The start of something big.",
+            "group": "General",
+            "dashboard": {
+                "dateLang": "en-EN",
+                "welcomeNight": "Good night",
+                "welcomeEvening": "Good evening",
+                "welcomeDay": "Good morning",
+                "now": "It is currently",
+                "pendingTasks": "Your pending tasks",
+                "noTasks": "You currently have no pending tasks"
+            }
+        },
+        "tasks": {
+            "menuTitle": "Tasks",
+            "title": "📝 Tasks",
+            "desc": "A place where you can take notes instantly.",
+            "group": "General",
+            "buttons": {
+                "newTask": "New task",
+                "all": "All tasks",
+                "undone": "To do",
+                "done": "Done",
+                "save": "Save"
+            },
+            "modal": {
+                "createTask": "Create task",
+                "editTask": "Edit task",
+                "name": "Name",
+                "date": "Date",
+                "cancel": "Cancel",
+                "create": "Create",
+                "placeholder": "Task name",
+                "saveChanges": "Save changes",
+                "errors": {
+                    "minLength": "The name must not be less than 3 characters",
+                    "maxLength": "The name must not be longer than 50 characters"
+                }
+            },
+            "status": {
+                "done": "Done",
+                "toDo": "To do"
+            }
+        },
+        "kanban": {
+            "menuTitle": "Kanban",
+            "title": "📌 Kanban",
+            "desc": "Productivity and stuff.",
+            "group": "General",
+            "taskPriority": {
+                "low": "Low",
+                "normal": "Normal",
+                "high": "High"
+            },
+            "modal": {
+                "createColumn": "Create column",
+                "name": "Name",
+                "cancel": "Cancel",
+                "create": "Create",
+                "color": "Color",
+                "placeholder": "Column name"
+            },
+            "buttons": {
+                "newColumn": "New column"
+            },
+            "placeholder": "Double click to edit the task..."
+        },
+        "calendar": {
+            "menuTitle": "Calendar",
+            "title": "📆 Calendar",
+            "desc": "Your organization taken to another level.",
+            "group": "General"
+        },
+        "settings": {
+            "menuTitle": "Settings",
+            "title": "⚙️ Settings",
+            "desc": "Color themes and stuff (TaskTrail noir is the best option and you know it).",
+            "group": "Settings",
+            "presets": {
+                "title": "Color palette presets",
+                "themes": {
+                    "0": {
+                        "name": "TaskTrail classic",
+                        "desc": "Modern & Sleek"
+                    },
+                    "1": {
+                        "name": "TaskTrail noir",
+                        "desc": "We care about your eyecare"
+                    },
+                    "2": {
+                        "name": "TaskTrail high contrast",
+                        "desc": "For better accessibility"
+                    }
+                }
+            },
+            "language": {
+                "title": "UI language"
+            },
+            "buttons": {
+                "save": "Save"
+            }
+        },
+        "logout": {
+            "menuTitle": "Logout",
+            "title": "",
+            "desc": "",
+            "group": "Settings",
+            "confirm": {
+                "title": "Logout",
+                "question": "Are you sure you want to log out?",
+                "confirm": "Confirm",
+                "cancel": "Cancel"
+            }
+        },
+        "alertify": {
+            "imageError": "Invalid file!",
+            "sizeError": "Image size must be smaller than 8MB!",
+            "usernameError": "The username must not contain white spaces.</br>It also must have a minimum of 3 characters and a maximum of 24 characters!",
+            "urlError": "An error occured while updating the data.",
+            "sentEmail": "Email sent successfully!",
+            "updateSuccess": "Data updated successfully."
+        },
+        "notifications": {
+            "emailVerification1": "You haven't verified your account yet, click",
+            "emailVerification2": "here",
+            "emailVerification3": "to resend the verification email."
+        }
+    },
+    "es": {
+        "English": "English",
+        "Español": "Español",
+        "lang": "Español",
+        "profile": {
+            "title": "👤 Perfil",
+            "desc": "Aquí podrás personalizar tu perfil.",
+            "group": "Perfil",
+            "userData": {
+                "choosePic": "Elige foto",
+                "userLabel": "Nombre de usuario",
+                "emailLabel": "Email",
+                "passLabel": "Contraseña",
+                "changePass": "Cambiar contraseña",
+                "save": "Guardar",
+                "deleteAccount": {
+                    "button": "Eliminar cuenta",
+                    "alertHeader": "Eliminar cuenta",
+                    "alertMessage": "<p class='label'>Escriba su nombre de usuario para eliminar su cuenta:</p> <input type='text' class='ajs-input input' placeholder='su nombre de usuario'>",
+                    "confirmationSuccess": "Cuenta eliminada.",
+                    "confirmationFail": "Por favor, escribe tu nombre de usuario."
+                }
+            }
+        },
+        "home": {
+            "menuTitle": "Inicio",
+            "title": "🏠 Inicio",
+            "desc": "El comienzo de algo grande.",
+            "group": "General",
+            "dashboard": {
+                "dateLang": "es-ES",
+                "welcomeNight": "Buenas noches",
+                "welcomeEvening": "Buenas tardes",
+                "welcomeDay": "Buenos días",
+                "now": "Actualmente son las",
+                "pendingTasks": "Tus tareas pendientes",
+                "noTasks": "Actualmente no tienes tareas pendientes"
+            }
+        },
+        "tasks": {
+            "menuTitle": "Tareas",
+            "title": "📝 Tareas",
+            "desc": "Un lugar en el que podrás tomar apuntes al instante.",
+            "group": "General",
+            "buttons": {
+                "newTask": "Nueva tarea",
+                "all": "Todas las tareas",
+                "undone": "Por hacer",
+                "done": "Terminadas",
+                "save": "Guardar"
+            },
+            "modal": {
+                "createTask": "Crear tarea",
+                "editTask": "Editar tarea",
+                "name": "Nombre",
+                "date": "Fecha",
+                "cancel": "Cancelar",
+                "create": "Crear",
+                "placeholder": "Nombre de la tarea",
+                "saveChanges": "Guardar cambios",
+                "errors": {
+                    "minLength": "El nombre no debe ser menor de 3 caracteres",
+                    "maxLength": "El nombre no debe ser mayor de 50 caracteres"
+                }
+            },
+            "status": {
+                "done": "Terminada",
+                "toDo": "Por hacer"
+            }
+        },
+        "kanban": {
+            "menuTitle": "Kanban",
+            "title": "📌 Kanban",
+            "desc": "Productividad y esas cosas.",
+            "group": "General",
+            "taskPriority": {
+                "low": "Baja",
+                "normal": "Normal",
+                "high": "Alta"
+            },
+            "modal": {
+                "createColumn": "Crear columna",
+                "name": "Nombre",
+                "cancel": "Cancelar",
+                "create": "Crear",
+                "color": "Color",
+                "placeholder": "Nombre de la columna"
+            },
+            "buttons": {
+                "newColumn": "Nueva columna"
+            },
+            "placeholder": "Haz doble click para editar la tarea..."
+        },
+        "calendar": {
+            "menuTitle": "Calendario",
+            "title": "📆 Calendario",
+            "desc": "Tu organización llevada a otro nivel.",
+            "group": "General"
+        },
+        "settings": {
+            "menuTitle": "Ajustes",
+            "title": "⚙️ Ajustes",
+            "desc": "Temas de colores y esas cosas. (TaskTrail oscuro es la mejor opción y lo sabes).",
+            "group": "Ajustes",
+            "presets": {
+                "title": "Plantillas de colores",
+                "themes": {
+                    "0": {
+                        "name": "TaskTrail clásico",
+                        "desc": "Moderno y elegante"
+                    },
+                    "1": {
+                        "name": "TaskTrail oscuro",
+                        "desc": "Nos preocupa tu visión"
+                    },
+                    "2": {
+                        "name": "TaskTrail alto contraste",
+                        "desc": "Para mejor accesibilidad"
+                    }
+                }
+            },
+            "language": {
+                "title": "Idioma de la interfaz"
+            },
+            "buttons": {
+                "save": "Guardar"
+            }
+        },
+        "logout": {
+            "menuTitle": "Cerrar sesión",
+            "title": "",
+            "desc": "",
+            "group": "Ajustes",
+            "confirm": {
+                "title": "Cerrar Sesión",
+                "question": "¿Estás seguro que quieres cerrar sesión?",
+                "confirm": "Confirmar",
+                "cancel": "Cancelar"
+            }
+        },
+        "alertify": {
+            "imageError": "¡Archivo no válido!",
+            "sizeError": "El tamaño de la imagen tiene que ser menor a 8MB!",
+            "usernameError": "El nombre de usuario no puede contener espacios.</br>También tiene que tener una longitud mínima a 3 carácteres y máxima de 24 carácteres!",
+            "urlError": "Se han producido un error al actualizar los datos.",
+            "sentEmail": "¡Correo enviado correctamente!",
+            "updateSuccess": "Datos actualizados correctamente."
+        },
+        "notifications": {
+            "emailVerification1": "No has verificado tu cuenta todavía, pulsa",
+            "emailVerification2": "aquí",
+            "emailVerification3": "para reenviar el correo de verificación."
+        }
+    }
+}

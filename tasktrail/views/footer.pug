@@ -1,0 +1,50 @@
+footer.footer
+    .content
+        .columns
+            .column.is-flex.is-flex-direction-column.is-align-items-center.is-justify-content-center
+                a(href="/")
+                    figure.image.es-180x63.is-flex.is-align-items-center.is-justify-content-center
+                        img(src="media/images/imagotype.svg" alt="TaskTrail Logo" draggable="false")
+
+            .column.is-flex.is-flex-direction-column.is-align-items-flex-start
+                h2.has-text-weight-semibold.is-family-secondary.is-uppercase.is-size-6= __("footer.navigation")
+                a(href="/signup").is-info
+
+                    span.icon-text
+                        span.icon
+                            i.fas.fa-user-plus
+                        span= __("navigation.signup")
+
+                a(href="/login").is-info
+                    span.icon-text
+                        span.icon
+                            i.fas.fa-right-to-bracket
+                        span= __("navigation.login")
+
+                a(href="/recover").is-info
+                    span.icon-text
+                        span.icon
+                            i.fas.fa-key
+                        span= __("navigation.recover")
+
+            .column.is-flex.is-flex-direction-column.is-align-items-flex-start
+                h2.has-text-weight-semibold.is-family-secondary.is-uppercase.is-size-6= __("footer.company")
+
+                a(href="/about").is-info
+                    span.icon-text
+                        span.icon
+                            i.fas.fa-address-card
+                        span= __("navigation.about")
+
+                a(href="/download").is-info
+                    span.icon-text
+                        span.icon
+                            i.fa-solid.fa-download
+                        span= __("navigation.download")
+
+                a(href="/tos").is-info
+                    span.icon-text
+                        span.icon
+                            i.fa-solid.fa-clipboard-user
+                        span= __("navigation.tos")
+

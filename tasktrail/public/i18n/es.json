@@ -1,0 +1,194 @@
+{
+	"lang": {
+		"en": "English",
+		"es": "Español"
+	},
+	"navigation": {
+		"login": "Iniciar sesión",
+		"signup": "Registrarse",
+		"recover": "He olvidado mi contraseña",
+		"about": "Sobre nosotros",
+		"download": "Descargar",
+		"tos": "Términos y condiciones"
+	},
+	"footer": {
+		"navigation": "Navegación",
+		"company": "Compañía"
+	},
+	"notifications": {
+		"cookies": "Este sitio web hace uso de cookies para proporcionarte una experiencia de usuario más agradable. Para saber más sobre nuestra política de cookies, puede hacer click sobre el siguiente enlace"
+	},
+	"index": {
+		"header": {
+			"title": "Tu productividad importa",
+			"subtitle": "Toma notas y apuntes de manera inteligente con TaskTrail, la herramienta para que tu flujo de trabajo sea eficiente",
+			"button": "Unirse ahora"
+		},
+		"main": {
+			"downloads": {
+				"title": "Ahora disponible para",
+				"button": "Descargar"
+			},
+			"blocks": {
+				"accesibility": {
+					"title": "Accesibile en móviles",
+					"description": "La interfaz de usuario se adapta perfectamente a las pantallas de los dispositivos móviles, los elementos se ordenan de manera clara y la carga de la página es rápida. Además, se ha prestado especial atención a la accesibilidad para garantizar que la aplicación sea fácil de usar para personas con discapacidades visuales y otros tipos de discapacidades. Esto hace que sea fácil para los usuarios acceder a la aplicación y realizar sus tareas de manera efectiva, incluso mientras están en movimiento."
+				},
+				"interface": {
+					"title": "Interfaz intuitiva y sencilla",
+					"description": "TaskTrail tiene una interfaz de usuario intuitiva y fácil de usar, gracias a su diseño sencillo y eficaz, y sus características personalizables y de búsqueda avanzada. Además, la aplicación proporciona feedback claro y específico al usuario en todo momento, lo que ayuda a garantizar que los usuarios siempre sepan lo que está sucediendo."
+				},
+				"customization": {
+					"title": "Personalizable y adaptable",
+					"description": "TaskTrail es una aplicación altamente personalizable y adaptable que se adapta a las necesidades de los usuarios. La aplicación ofrece una amplia gama de opciones de personalización, desde el cambio de temas y fuentes hasta las herramientas avanzadas de gestión de proyectos. Además, TaskTrail cuenta con características de accesibilidad incorporadas para garantizar que sea fácil de usar para todas las personas."
+				}
+			},
+			"cta": {
+				"title": "Forma parte de TaskTrail",
+				"button": "Crear una cuenta"
+			}
+		}
+	},
+	"signup": {
+		"form": {
+			"username": "Nombre de usuario",
+			"email": "Correo",
+			"password": "Contraseña",
+			"confirmPassword": "Confirma tu contraseña",
+			"tosText": "Estoy de acuerdo con los",
+			"tosLink": "terminos y condiciones",
+			"error": {
+				"username": "El nombre de usuario no puede contener espacios. También tiene que tener una longitud mínima a 3 carácteres y máxima de 24 carácteres!",
+				"email": "El campo no cumple el formato correcto.",
+				"password": "Las contraseñas no coinciden."
+			}
+		},
+		"question": "¿Ya tienes una cuenta de TaskTrail?"
+	},
+	"login": {
+		"passwordChanged": "Contraseña cambiada correctamente",
+		"form": {
+			"email": "Correo",
+			"emailPlaceholder": "correo@ejemplo.com",
+			"password": "Contraseña"
+		},
+		"forgotPassword": "¿Has olvidado tu contraseña?",
+		"question": "¿No tienes una cuenta de TaskTrail?",
+		"providers": {
+			"google": "Iniciar sesión con Google"
+		},
+		"error": {
+			"incorrectUser": "El correo/contraseña es incorrecto"
+		}
+	},
+	"about": {
+		"header": {
+			"title": "Sobre nosotros",
+			"subtitle": "¡Conócenos un poco más!",
+			"description": "TaskTrail es una aplicación de gestión de tareas diseñada para ayudarlo a organizar su trabajo de manera más eficiente y efectiva. Con TaskTrail, puede crear y asignar tareas, realizar un seguimiento del progreso y colaborar con su equipo para alcanzar sus objetivos."
+		},
+		"main": {
+			"team": {
+				"title": "Nuestro equipo",
+				"description": "El equipo detrás de TaskTrail está comprometido en brindarle la mejor experiencia de usuario posible. Desde el diseño hasta el desarrollo, nos aseguramos de que cada aspecto de la aplicación esté pensado para satisfacer sus necesidades.",
+				"role": {
+					"webDeveloper": "Desarrollador Web"
+				},
+				"viewMore": {
+					"button": "Más sobre",
+					"descriptionJason": "es un miembro del equipo que ha demostrado su habilidad para trabajar en equipo y colaborar con otros desarrolladores. Con su actitud positiva y enfoque centrado en el usuario, ha contribuido en gran medida al éxito de varios proyectos en los que ha participado.",
+					"descriptionDaniel": "es un desarrollador web altamente talentoso que se destaca por su atención al detalle y su compromiso con la excelencia. Con su dedicación y su pasión por el desarrollo web, ha sido un activo invaluable para el equipo de TaskTrail y ha contribuido en gran medida al éxito de la aplicación.",
+					"descriptionMario": "es un desarrollador web eficiente y efectivo que se destaca por su atención al detalle y su capacidad para desarrollar soluciones personalizadas y de alta calidad. Con su actitud positiva y su capacidad para resolver problemas de manera creativa, ha sido un activo invaluable para el equipo de TaskTrail."
+				}
+			}
+		}
+	},
+	"download": {
+		"title": "Ahora disponible para escritorio",
+		"subtitle": "¡Descargar TaskTrail!",
+		"description": "Disponible para cualquier sistema: Windows, Linux y Mac OS",
+		"button": "Descargar"
+	},
+	"recover": {
+		"title": "Recuperar cuenta",
+		"form": {
+			"email": "Correo",
+			"emailPlaceholder": "correo@ejemplo.com",
+			"password": "Contraseña",
+			"confirmPassword": "Confirma tu contraseña"
+		},
+		"success": "Se ha enviado correctamente el correo, si no lo encuentra, por favor, revise su bandeja de correo no deseado",
+		"failure": "La página ha expirado",
+		"help": "Por favor, introduce la dirección de correo electrónico que utilizaste para registrarte. Te enviaremos un e-mail con tu nueva contraseña. Revisa el correo no deseado si no lo recibes",
+		"error": {
+			"mismatch": "Las contraseñas no coinciden",
+			"existingPassword": "No puedes introducir la misma contraseña que ya tienes"
+		}
+	},
+	"verify": {
+		"title": "Verificar cuenta",
+		"success": "Cuenta verificada correctamente",
+		"failure": "La página ha expirado"
+	},
+	"tos": {
+		"welcome": {
+			"title": "Términos y condiciones",
+			"description": "¡Bienvenido a TaskTrail! Estos términos y condiciones describen las normas y reglamentos para el uso del sitio web de TaskTrail, ubicado en https://tasktrailapp.com. Al acceder a este sitio web asumimos que acepta estos términos y condiciones. No continúe utilizando TaskTrail si no está de acuerdo en aceptar todos los términos y condiciones establecidos en esta página. La siguiente terminología se aplica a estos Términos y Condiciones, Declaración de Privacidad y Aviso de Exención de Responsabilidad y todos los Acuerdos: 'Cliente', 'Usted' y 'Su' se refiere a usted, la persona que inicia sesión en este sitio web y cumple con los términos y condiciones de la Empresa. La empresa', 'nosotros', 'nosotros', 'nuestro' y 'nosotros', se refiere a nuestra empresa. Parte', 'Partes' o 'Nosotros', se refiere tanto al Cliente como a nosotros mismos. Todos los términos se refieren a la oferta, aceptación y contraprestación de pago necesaria para llevar a cabo el proceso de nuestra asistencia al Cliente de la manera más adecuada con el propósito expreso de satisfacer las necesidades del Cliente con respecto a la prestación de los servicios indicados de la Empresa, de conformidad con y con sujeción a la legislación vigente de es. Cualquier uso de la terminología anterior u otras palabras en singular, plural, mayúsculas y / o él / ella o ellos, se toman como intercambiables y por lo tanto como refiriéndose a la misma."
+		},
+		"cookies": {
+			"title": "Cookies",
+			"description": "Utilizamos cookies. Al acceder a TaskTrail, usted acepta el uso de cookies de acuerdo con la Política de Privacidad de TaskTrail. La mayoría de los sitios web interactivos utilizan cookies para permitirnos recuperar los datos del usuario en cada visita. Nuestro sitio web utiliza cookies para permitir la funcionalidad de determinadas áreas y facilitar así la visita a nuestro sitio web. Algunos de nuestros socios afiliados/publicitarios también pueden utilizar cookies."
+		},
+		"license": {
+			"title": "Licencia",
+			"description": "A menos que se indique lo contrario, TaskTrail y/o sus licenciantes poseen los derechos de propiedad intelectual de todo el material de TaskTrail. Todos los derechos de propiedad intelectual están reservados. Usted puede acceder a esto desde TaskTrail para su uso personal sujeto a las restricciones establecidas en estos términos y condiciones. El presente Acuerdo comenzará en la fecha del mismo. Algunas partes de este sitio web ofrecen a los usuarios la oportunidad de publicar e intercambiar opiniones e información en determinadas áreas del sitio web. TaskTrail no filtra, edita, publica o revisa los Comentarios antes de su presencia en el sitio web. Los Comentarios no reflejan los puntos de vista y opiniones de TaskTrail, sus agentes y/o afiliados. Los Comentarios reflejan los puntos de vista y opiniones de la persona que publica sus puntos de vista y opiniones. En la medida permitida por las leyes aplicables, TaskTrail no será responsable de los Comentarios ni de ninguna responsabilidad, daños o gastos causados y/o sufridos como resultado de cualquier uso y/o publicación y/o aparición de los Comentarios en este sitio web. TaskTrail se reserva el derecho de supervisar todos los Comentarios y de eliminar cualquier Comentario que pueda considerarse inapropiado, ofensivo o que infrinja estos Términos y Condiciones. Por la presente, usted concede a TaskTrail una licencia no exclusiva para utilizar, reproducir, editar y autorizar a otros a utilizar, reproducir y editar cualquiera de sus Comentarios en todas y cada una de las formas, formatos o medios de comunicación.",
+			"mustnot": {
+				"title": "No debes:",
+				"list": {
+					"one": "Republicar material de TaskTrail",
+					"two": "Vender, alquilar o sublicenciar material de TaskTrail",
+					"three": "Reproducir, duplicar o copiar material de TaskTrail",
+					"four": "Redistribuir contenidos de TaskTrail"
+				}
+			},
+			"warrant": {
+				"title": "Usted garantiza y declara que:",
+				"list": {
+					"one": "Usted tiene derecho a publicar los Comentarios en nuestro sitio web y dispone de todas las licencias y consentimientos necesarios para hacerlo;",
+					"two": "Los Comentarios no invaden ningún derecho de propiedad intelectual, incluidos, entre otros, derechos de autor, patentes o marcas registradas de terceros;",
+					"three": "Los Comentarios no contienen ningún material difamatorio, calumnioso, ofensivo, indecente o ilegal que suponga una invasión de la intimidad.",
+					"four": "Los Comentarios no se utilizarán para solicitar o promocionar negocios o costumbres ni para presentar actividades comerciales o ilícitas."
+				}
+			}
+		},
+		"iframes": {
+			"title": "iFrames",
+			"description": "Sin previa aprobación y autorización por escrito, no podrá crear marcos alrededor de nuestras Páginas Web que alteren en modo alguno la presentación visual o el aspecto de nuestro Sitio Web."
+		},
+		"liability": {
+			"title": "Responsabilidad por contenidos",
+			"description": "No seremos responsables de ningún contenido que aparezca en su sitio web. Usted se compromete a protegernos y defendernos frente a cualquier reclamación que se plantee en su Sitio Web. No deben aparecer enlaces en ningún sitio web que puedan interpretarse como difamatorios, obscenos o delictivos, o que infrinjan, violen de otro modo o propugnen la infracción u otra violación de los derechos de terceros."
+		},
+		"rights": {
+			"title": "Reserva de derechos",
+			"description": "Nos reservamos el derecho a solicitarle que elimine todos los enlaces o cualquier enlace concreto a nuestro Sitio Web. Usted se compromete a eliminar inmediatamente todos los enlaces a nuestro Sitio Web cuando así se le solicite. También nos reservamos el derecho a modificar estas condiciones y su política de enlaces en cualquier momento. Al enlazar continuamente con nuestro sitio web, usted acepta cumplir y respetar estas condiciones de enlace."
+		},
+		"links": {
+			"title": "Eliminación de enlaces de nuestro sitio web",
+			"description": "Si encuentra algún enlace en nuestro Sitio Web que le resulte ofensivo por cualquier motivo, puede ponerse en contacto con nosotros e informarnos en cualquier momento. Tendremos en cuenta las solicitudes de eliminación de enlaces, pero no estamos obligados a ello ni a responderle directamente. No aseguramos que la información de este sitio web sea correcta, no garantizamos que sea completa o exacta; tampoco prometemos que el sitio web siga estando disponible o que el material del sitio web se mantenga actualizado."
+		}
+	},
+	"email": {
+		"recover": {
+			"subject": "Recuperación de cuenta",
+			"link": "Recuperar Cuenta"
+		},
+		"verify": {
+			"subject": "Verificación de cuenta",
+			"link": "Verificar Cuenta"
+		}
+	},
+	"error": {
+		"e404": "Página no encontrada"
+	}
+}

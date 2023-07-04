@@ -1,0 +1,61 @@
+extends layout
+
+block content
+    main.content
+        .block.mt-5
+            .container
+                h1.title= __("tos.welcome.title")
+                p= __("tos.welcome.description")
+
+        .block
+            .container
+                h1.title= __("tos.cookies.title")
+                p= __("tos.cookies.description")
+
+        .block
+            .container
+                h1.title= __("tos.license.title")
+                p= __("tos.license.description")
+
+                p= __("tos.license.mustnot.title")
+                ul
+                    li= __("tos.license.mustnot.list.one")
+                    li= __("tos.license.mustnot.list.two")
+                    li= __("tos.license.mustnot.list.three")
+                    li= __("tos.license.mustnot.list.four")
+
+                p= __("tos.license.warrant.title")
+                ul
+                    li= __("tos.license.warrant.list.one")
+                    li= __("tos.license.warrant.list.two")
+                    li= __("tos.license.warrant.list.three")
+                    li= __("tos.license.warrant.list.four")
+
+        .block
+            .container
+                h1.title= __("tos.iframes.title")
+                p= __("tos.iframes.description")
+
+        .block
+            .container
+                h1.title= __("tos.liability.title")
+                p= __("tos.liability.description")
+
+        .block
+            .container
+                h1.title= __("tos.rights.title")
+                p= __("tos.rights.description")
+
+        .block
+            .container
+                h1.title= __("tos.links.title")
+                p= __("tos.links.description")
+
+        .block.mb-5
+            .container
+                a(href="https://www.youtube.com/watch?v=dQw4w9WgXcQ") &nbsp;
+
+block footer 
+    include footer
+
+    include cookies

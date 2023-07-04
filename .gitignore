@@ -1,0 +1,12 @@
+.env*
+!.env.example
+
+node_modules
+package-lock.json
+
+tasktrail/public/css
+tasktrail/public/media/images/uploads/*
+tasktrail/public/media/installers/*
+!tasktrail/public/media/images/uploads/userpic.png
+
+dist

@@ -1,0 +1,92 @@
+.user-form
+    max-width: 650px
+
+.profile-container
+    @include sm-breakpoint
+        flex-direction: column !important
+
+    .profile-pic-div
+        height: 100px !important
+        width: 100px !important
+        position: relative
+        border-radius: 50%
+        overflow: hidden
+
+    .photo
+        width: 100% !important
+        height: 100% !important
+        object-fit: cover
+
+    .file
+        display: none
+
+    .uploadBtn
+        height: 100% !important
+        width: 100% !important
+        border-radius: 50%
+
+        font-weight: bold
+        color: wheat
+        background: rgba(0, 0, 0, 0.7)
+        text-align: center
+
+        display: none
+        align-items: center
+        justify-content: center
+        position: absolute
+        transform: translateX(-50%)
+        left: 50%
+        bottom: -5px
+        cursor: pointer
+
+    & label
+        margin: 5px 0 !important
+
+    & input[type="text"], & input[type="password"]
+        border-radius: 4px 0 0 4px !important
+    & h1
+        padding-top: 8px !important
+        font-weight: normal !important
+        color: grey !important
+    & h1, input[type="text"]
+        font-size: 1em
+        padding-left: calc(0.75em - 1px)
+        height: fit-content
+    & .fa-solid.fa-pen-to-square.button
+        border-radius: 0 4px 4px 0 !important
+
+.password button
+    @include sm-breakpoint
+        width: 100% !important
+
+.user-data
+    @include sm-breakpoint
+        margin-left: 0 !important
+        width: 100% !important
+
+    order: 2
+    margin-left: 15px
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-content: space-between
+    width: calc(100% - 100px) !important
+
+    & label
+        margin-bottom: 0 !important
+
+.username
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-radius: 4px !important
+
+.username-input
+    width: 100%
+    box-sizing: border-box
+    background-color: whitesmoke
+
+.input[disabled]
+    color: $clr-gray
+    font-weight: bold

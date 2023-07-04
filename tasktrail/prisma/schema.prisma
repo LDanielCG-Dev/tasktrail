@@ -1,0 +1,75 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "mysql"
+    url      = env("DATABASE_URL")
+}
+
+model Tasks {
+    id      Int      @id @default(autoincrement())
+    user_id Int
+    order   Int      @default(dbgenerated("0"))
+    name    String   @db.VarChar(50)
+    done    Boolean  @default(dbgenerated("false"))
+    edit    Boolean  @default(dbgenerated("false"))
+    date    DateTime @db.DateTime(0)
+
+    Users   Users?   @relation(fields: [user_id], references: [id])
+}
+
+model Users {
+    id          Int      @id @default(autoincrement())
+    provider_id String?  @unique
+    username    String   @db.VarChar(255)
+    email       String   @unique(map: "email") @db.VarChar(255)
+    password    String?  @db.VarChar(255)
+    img         String?  @db.VarChar(255) @default("/media/images/uploads/userpic.png")
+    verified    Boolean  @default(dbgenerated("false"))
+    disabled    Boolean  @default(dbgenerated("false"))
+
+    Tasks       Tasks[]
+    Tokens      Tokens[]
+}
+
+model Tokens {
+    id         Int        @id @default(autoincrement())
+    user_id    Int
+    type_id    Int
+    value      String     @db.VarChar(32)
+    expiracy   DateTime   @db.DateTime(0)
+
+    Users      Users      @relation(fields: [user_id], references: [id], onDelete: Cascade, map: "Users_ibfk_1")
+    TokenTypes TokenTypes @relation(fields: [type_id], references: [id], onDelete: Cascade, map: "TokenTypes_ibfk_1")
+}
+
+model KanbanTasks {
+    id              Int
+    order           Int
+    name            String
+    priority        Int
+    kanbanColumnsId Int
+    userid          Int
+
+    KanbanColumns   KanbanColumns? @relation(fields: [kanbanColumnsId], references: [id], onDelete: Cascade)
+
+    @@id([id, userid])
+}
+
+model KanbanColumns {
+    id          Int    @id @default(autoincrement())
+    order       Int
+    title       String
+    color       String
+    userid      Int
+
+    KanbanTasks KanbanTasks[]
+}
+
+model TokenTypes {
+    id       Int      @id @default(autoincrement())
+    name     String   @db.VarChar(255)
+
+    Tokens   Tokens[]
+}

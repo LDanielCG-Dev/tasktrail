@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    .container.is-fluid.is-flex.is-flex-direction-column.is-align-items-center
+        .is-family-code.mt-6
+            h1.title.has-text-primary.is-size-1= error.status 
+            //- p.subtitle.is-size-3= i18n.error.e404
+            p.subtitle.is-size-3= __("error.e404")
+
+        figure.image.is-404.mt-6
+            img(src="/media/images/404.svg" alt="404")
+
+    Debug
+    pre= message
+    pre #{error.stack}

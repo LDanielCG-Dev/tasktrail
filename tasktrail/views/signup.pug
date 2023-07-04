@@ -1,0 +1,53 @@
+extends layout
+
+block scripts 
+    script(src="https://unpkg.com/validator@latest/validator.min.js" defer) 
+    script(src="/js/forms.js" type="module" defer) 
+
+block content
+    .main.register.is-flex.is-justify-content-space-evenly
+
+        img.is-unselectable.no-pointerevents.blob(src="media/images/blob.svg" alt="blob" draggable="false")
+
+        form.form.register.is-radiusless.mx-5(action="" method="POST")
+            p.title= __("navigation.signup")
+            .field
+                label.label #{__("signup.form.username")}:
+                .control.has-icons-left.has-icons-right
+                    input.input(type="text" name="username" placeholder=__("signup.form.username") data-input="username" value=username autofocus required)
+                    span.icon.is-small.is-left 
+                        i.fas.fa-user
+
+            .field
+                label.label #{__("signup.form.email")}:
+                .control.has-icons-left.has-icons-right
+                    input.input(type="email" name="email" placeholder=__("signup.form.email") data-input="email" value=email required)
+                    span.icon.is-small.is-left 
+                        i.fas.fa-envelope 
+
+            .field
+                label.label #{__("signup.form.password")}: 
+                .control.has-icons-left.has-icons-right
+                    input.input(type="password" name="password" placeholder=__("signup.form.password") data-input="password" required)
+                    span.icon.is-small.is-left 
+                        i.fas.fa-sharp.fa-solid.fa-key
+
+            .field
+                label.label #{__("signup.form.confirmPassword")}: 
+                .control.has-icons-left.has-icons-right
+                    input.input(type="password" name="password2" placeholder=__("signup.form.confirmPassword") data-input="password" required)
+                    span.icon.is-small.is-left 
+                        i.fas.fa-sharp.fa-solid.fa-key
+            .field
+                .control
+                    label.checkbox
+                        input(type='checkbox' name="tos" required)
+                        |  #{__("signup.form.tosText")} 
+                        a.is-info(href='/tos')= __("signup.form.tosLink")
+            .field
+                .control.has-text-centered
+                    button.button.is-primary.is-fullwidth= __("navigation.signup")
+            .field
+                .control
+                    label.label #{__("signup.question")} 
+                        a.is-info(href="/login")= __("navigation.login")

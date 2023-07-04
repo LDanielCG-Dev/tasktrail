@@ -1,0 +1,26 @@
+// Breakpoints
+@mixin sm-breakpoint
+    @media (max-width: #{$screen-sm-breakpoint})
+        @content
+
+@mixin sm-breakpoint-reverse
+    @media (min-width: #{$screen-sm-breakpoint})
+        @content
+
+@mixin md-breakpoint
+    @media (max-width: #{$screen-md-breakpoint})
+        @content
+
+@mixin lg-breakpoint
+    @media (max-width: #{$screen-lg-breakpoint})
+        @content
+
+@mixin xl-breakpoint
+    @media (max-width: #{$screen-xl-breakpoint})
+        @content
+
+// Misc
+@mixin skeleton()
+    cursor: wait
+    background-color: $clr-white
+    animation: loading .5s infinite alternate

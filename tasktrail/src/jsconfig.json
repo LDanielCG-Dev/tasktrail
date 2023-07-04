@@ -1,0 +1,10 @@
+{
+    "extensions": [
+        ".vue"
+    ],
+    "vueCompilerOptions": {
+        "plugins": [
+            "@volar/vue-language-plugin-pug"
+        ]
+    }
+}

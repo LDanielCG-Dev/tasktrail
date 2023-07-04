@@ -1,0 +1,57 @@
+doctype html
+
+html(lang="es").has-navbar-fixed-bottom.has-navbar-fixed-top
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title= title
+
+        link(rel="shortcut icon" href="/media/images/isotype.svg" type="image/svg")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css")
+        link(rel="stylesheet" href="/css/bulma.css")
+        block styles
+
+        //- script(src="/js/consent.js" defer)
+        //- script(src="/js/lang.js" defer)
+        script(src="/js/cookies.js" defer type="module")
+        script(src="/js/navbar.js" defer)
+        block scripts
+
+        //- SEO
+        -let url = 'https://tasktrailapp.com'
+        -let image = '/media/images/isotype.png'
+        -let name = 'TaskTrail'
+        -let desc = 'Crea una cuenta o inicia sesión en TaskTrail. Gestiona tus tareas de una manera sencilla y eficiente.'
+
+        meta(name='title' content=name)
+        meta(name='description' content=desc)
+
+        //- Open Graph / Facebook
+        meta(property='og:type' content='website')
+        meta(property='og:url' content=url)
+        meta(property='og:title' content=name)
+        meta(property='og:description' content=desc)
+        meta(property='og:image' content=`${url}${image}`)
+
+        //- Twitter
+        meta(property='twitter:card' content='summary_large_image')
+        meta(property='twitter:url' content=url)
+        meta(property='twitter:title' content=name)
+        meta(property='twitter:description' content=desc)
+        meta(property='twitter:image' content=`${url}${image}`)
+
+    body
+        //- Navbar
+        block navbar 
+            include navbar
+
+        //- Header
+        block header
+
+        //- Content
+        main
+            block content
+
+        //- Footer
+        block footer

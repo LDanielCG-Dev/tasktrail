@@ -1,0 +1,16 @@
+extends layout
+
+block scripts 
+    script(src="/js/forms.js" type="module" defer)
+
+block content
+    .main.recover.is-flex.is-justify-content-space-evenly.is-align-items-center
+        img.is-unselectable.no-pointerevents.blob(src="/media/images/blob.svg" alt="blob" draggable="false")
+        form.form.recover.is-radiusless.mx-5(action="" method="POST")
+            p.title= __("verify.title")
+
+            if token
+                .notification.is-success.px-4.py-2= __("verify.success")
+
+            else
+                .notification.is-warning.px-4.py-2= __("verify.failure")

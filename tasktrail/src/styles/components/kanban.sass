@@ -1,0 +1,143 @@
+.kanban-wrapper
+    overflow: auto
+    height: 58vh
+
+.kanban-board
+    display: grid
+    grid-template-rows: 1fr
+    grid-template-columns: repeat(8, 1fr)
+    gap: 1em
+    max-height: 72vh
+    padding: 0 0 2em
+    scrollbar-width: thin
+    scrollbar-color: $primary $clr-white
+
+    @include sm-breakpoint
+        grid-template-columns: 1fr
+
+.kanban-column
+    border: 1px solid $clr-white
+    border-radius: 5px
+    padding: 2em 1.4em
+    width: fit-content
+
+    &-buttons
+        display: flex
+        justify-content: flex-end
+        align-items: center
+
+    @include sm-breakpoint
+        width: 100%
+
+        &-title
+            width: 100%
+
+        &-buttons
+            justify-content: flex-start
+
+.kanban-cards
+    min-height: $kanban-task-height * 1.25
+    margin: 5px 0
+    gap: 1rem
+    overflow-y: visible
+    scrollbar-width: none
+    width: $kanban-task-width
+
+    &::-webkit-scrollbar
+        display: none
+
+    @include sm-breakpoint
+        width: 100%
+
+.column-title
+    padding-left: 0
+    width: 12.5rem
+
+    &[disabled]
+        border: 0
+        outline: 0
+        user-select: none
+        pointer-events: none
+
+.kanban-text
+    width: 100%
+    resize: none !important
+    overflow: hidden
+    font-weight: bold
+
+    &[disabled]
+        border: 0
+        outline: 0
+        user-select: none
+        pointer-events: none
+        color: inherit
+        background: none !important
+
+    &::placeholder,
+    &[disabled]::placeholder
+        color: $clr-gray
+
+    .skeleton
+        @include skeleton
+        height: 3.5ch
+        margin: 5px 0
+
+        &:last-child
+            width: 50%
+
+.item .card
+    display: flex
+    flex-direction: column
+    gap: 4px
+    padding: 10px
+
+.badge
+    margin: 1rem 0
+    cursor: pointer
+
+.label
+    color: $clr-gray-dark
+    margin-bottom: 5px
+
+.kanban-action
+    display: flex
+    justify-content: space-between
+
+.dropdown-trigger button
+    width: fit-content !important
+    height: 30px !important
+    border: none
+    color: black
+    padding: 1px 20px
+    text-align: center
+    text-decoration: none
+    border-radius: 100px
+
+.kanban__drop-preview
+    position: relative
+    margin: 10px
+    background-color: $clr-white
+    border: 2px dashed rgba(0, 0, 0, 0.059) !important
+    border-radius: 4px
+
+    &::before
+        position: absolute
+        top: 50%
+        left: 50%
+        color: $clr-gray
+        content: ""
+        font-weight: bold
+        transform: translate(-50%, -50%)
+
+    &::after
+        position: absolute
+        top: 50%
+        left: 27%
+        width: 20px
+        height: 20px
+        content: ""
+        transform: translate(-50%, -50%)
+
+.hide .kanban-card,
+.hide .card
+    opacity: 0

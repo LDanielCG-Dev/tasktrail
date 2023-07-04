@@ -1,0 +1,93 @@
+.item
+    margin: 8px 0
+
+.tasks
+    min-height: ($simple-task-height) * $simple-tasks-per-page
+    max-height: ($simple-task-height + 50px) * $simple-tasks-per-page
+    margin-bottom: 25px
+
+    @include sm-breakpoint
+        min-height: auto
+
+.task
+    .tag
+        min-width: 12.5ch
+
+        &.skeleton
+            width: 100%
+            @include skeleton
+
+    &-content,
+    &-misc
+        display: flex
+
+    &-content
+        width: 100%
+
+    @include sm-breakpoint
+        &-content
+            flex-direction: column
+            gap: 8px
+
+        &-misc
+            flex-direction: row-reverse
+            justify-content: flex-end
+            gap: 8px
+
+.filter
+    transition: background-color .3s
+
+.card-header
+    position: relative
+    box-shadow: none !important
+
+    &-title
+        word-break: break-all
+        margin: 0 !important
+
+    @include sm-breakpoint
+        .handle
+            padding: 0 8px
+
+        input.checkbox
+            display: none
+            margin-right: 0 !important
+
+        &-title,
+        &-icon
+            padding: 0 16px
+
+        .tags
+            padding-right: 0 !important
+
+        .date
+            padding: 0 !important
+
+        .actions
+            display: flex
+            flex-direction: column
+
+.strikethrough
+    text-decoration: line-through
+    text-decoration-thickness: 2px
+
+.grab
+    cursor: move
+
+.pagination
+    ul
+        width: 100%
+
+    &-list
+        display: flex
+        justify-content: center
+        margin: 0 !important
+
+        li
+            margin-top: 0 !important
+
+    &-link
+        cursor: pointer !important
+
+        &[disabled]
+            cursor: default !important

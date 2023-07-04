@@ -1,0 +1,32 @@
+- var langs = { 'en': 'https://cdn0.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality-/283/usa-512.png', 'es': 'https://cdn0.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality-/283/spain-512.png' }
+
+.navbar.is-fixed-top.has-background-primary-light
+    .container
+        .navbar-brand
+            .navbar-item
+                img.is-hidden-touch(src="/media/images/imagotype.svg" alt="TaskTrail Logo" draggable="false")
+                img.is-hidden-desktop(src="/media/images/isotype.svg" alt="TaskTrail Logo" draggable="false")
+
+            span.navbar-burger
+                span
+                span
+                span
+
+        .navbar-menu.has-background-primary-light.p-3
+            .navbar-end
+                .buttons
+                    a.navbar-item.button.is-primary.is-outlined(href="/login")= __("navigation.login")
+                    a.navbar-item.button.is-primary(href="/signup")= __("navigation.signup")
+
+        .navbar-item.has-dropdown.is-hoverable.lang-dropdown
+            a.navbar-link.is-arrowless.active-lang
+                if lang
+                    img(src=langs[lang] alt=lang)
+                else 
+                    img(src=langs['es'] alt=__("lang.es"))
+
+            .navbar-dropdown.is-boxed.is-right
+                each val, key in langs
+                    a.navbar-item
+                        img(src=val alt= __("lang." + key))
+                        span.ml-1.lang= __("lang." + key)

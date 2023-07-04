@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    header.hero.is-medium.has-background-primary-light
+        .hero-body
+            .container
+                .columns.is-vcentered
+                    .column 
+                        p.subtitle.has-text-primary.has-text-weight-semibold.is-family-secondary.is-uppercase.is-size-6-mobile.is-size-6-desktop= __("download.subtitle")
+                        h1.title.is-spaced.is-size-3-mobile.is-size-1-desktop= __("download.title")
+                        p.subtitle.is-size-5-mobile.is-size-4-desktop= __("download.description")
+
+                    .column
+                        figure.image.is-3by2
+                            img(src="media/images/download.svg" alt="about us" draggable="false")
+
+    main
+        .tile.is-ancestor.is-justify-content-center.my-2
+            .tile.is-vertical.is-8
+                .tile
+                    if system
+                        .tile.is-parent
+                            article.tile.is-child.notification.is-primary
+                                p.title
+                                    i.mr-2.fa-brands(class=system.icon)
+                                    span= system.name 
+                                p.subtitle= system.desc
+                                a.button.is-rounded.is-medium(href=system.url)
+                                    i.fa-solid.fa-download.mr-2
+                                    span= __("download.button")
+
+                    .tile.is-parent.is-vertical
+                        each system in systems
+                            article.tile.is-child.notification.is-light
+                                p.title
+                                    i.mr-2.fa-brands(class=system.icon)
+                                    span= system.name 
+                                p.subtitle= system.desc
+                                a.button.is-rounded(href=system.url)
+                                    i.fa-solid.fa-download.mr-2
+                                    span= __("download.button")
+
+
+block footer 
+    include footer
+
+    include cookies

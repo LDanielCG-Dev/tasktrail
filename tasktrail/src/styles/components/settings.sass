@@ -1,0 +1,503 @@
+// Color theme presets
+.dark-theme
+    $TT-black: #0f0f0f
+    $TT-white: #ffffff
+    $TT-grey: #323232
+    $TT-grey-dark: #212121
+    $TT-grey-darker: #0a0a0a
+    $TT-grey-light: #525252
+    $TT-grey-lighter: #bebebe
+
+    $TT-blue: #185a9d
+    $TT-blue-light: #227fdd
+    $TT-blue-lighter: #edf5fc
+    $TT-blue-dark: #1d3e5e
+
+    $TT-green: #2f815c
+    $TT-green-light: #48c78e
+    $TT-green-lighter: #effaf5
+    $TT-green-dark: #194632
+
+    $TT-red: #c11033
+    $TT-red-light: #f14668
+    $TT-red-lighter: #feecf0
+    $TT-red-dark: #761b2d
+
+    background-color: $TT-black !important
+
+    // Font color
+    h1, h2, h3, h4, h5, h6, .menu-list, .menu-list a, .menu-label, .title, .modal-card-title, .modal-card-body .label, .input, .vc-title
+        color: $TT-white !important
+    p, .card-header-icon
+        color: $TT-grey-lighter !important
+    .input::placeholder
+        color: $TT-grey-light !important
+
+    // Side menu, modal and color presets cards
+    .menu-list:hover, a:hover, .router-link-active, .modal-card-head, .modal-card-foot, .input, .palette, .vc-arrow:hover, .ajs-header, .ajs-footer
+        background-color: $TT-grey-dark !important
+        border-color: $TT-grey-dark
+    .modal-card-head
+        border-bottom: 1px solid $TT-grey-dark !important
+    .modal-card-foot
+        border-top: 1px solid $TT-grey-dark !important
+    .modal-card-body, .modal-card-foot .button, .select select, .vc-container, .ajs-dialog
+        color: $TT-white !important
+        border-color: $TT-grey-dark
+        background-color: $TT-grey !important
+    .table
+        color: $TT-grey-lighter !important
+        background-color: $TT-grey !important
+        border-radius: 5px
+        width: fit-content !important
+    .table th
+        color: $TT-white !important
+
+    // Kanban
+    .card
+        background-color: $TT-black !important
+    .item
+        background-color: $TT-grey-dark !important
+    .kanban-column
+        border: 1px solid $TT-grey !important
+        background-color: $TT-grey-darker !important
+    .column-title
+        background-color: $TT-grey-darker !important
+    .card textarea
+        color: $TT-grey-lighter !important
+    .card .textarea:not(:disabled)
+        background-color: $TT-grey-dark !important
+    .card-header
+        align-items: center
+    a.dropdown-item.is-active, button.dropdown-item.is-active
+        background-color: $TT-blue-light !important
+    a.dropdown-item.is-active:hover, button.dropdown-item.is-active:hover
+        background-color: $TT-blue-dark !important
+    .dropdown a:hover
+        background-color: $TT-blue-dark !important
+        color: $TT-white !important
+
+    .kanban-action strong
+        color: $TT-grey-light !important
+    .vc-twitter
+        background-color: $TT-grey-dark !important
+    .vc-twitter-triangle
+        border-color: transparent transparent $TT-grey-dark transparent !important
+    .vc-input__input
+        background-color: $TT-grey !important
+    .vc-twitter-hash
+        background-color: $TT-grey-light !important
+        color: $TT-grey-lighter !important
+        font-weight: bold !important
+    .vc-editable-input input
+        box-shadow: inset 0 0 0 1px $TT-grey-light !important
+        color: $TT-grey-lighter !important
+    .modal-card-body .field .input::placeholder
+        color: $TT-grey-lighter !important
+
+    .drop-preview
+        position: relative
+        margin: 10px
+        background-color: $TT-grey !important
+        border: 2px dashed $TT-grey-light !important
+        border-radius: 4px
+
+    // Buttons
+    .button.is-success.is-light
+        background-color: $TT-green-dark !important
+        color: $TT-green-lighter !important
+    .button.is-danger.is-light
+        background-color: $TT-red-dark !important
+        color: $TT-red-lighter !important
+    .button.is-primary.is-light
+        background-color: $TT-blue-dark !important
+        color: $TT-blue-lighter !important
+    .button.is-success
+        background-color: $TT-green !important
+
+    .is-danger
+        background-color: $TT-red-dark !important
+    .is-success
+        background-color: $TT-green-dark !important
+
+    // Add, edit and delete icons
+    .has-text-danger
+        color: $TT-red-light !important
+    .has-text-success
+        color: $TT-green-light !important
+    .has-text-info
+        color: $TT-blue-light !important
+
+    .button.pagination-link
+        background-color: $TT-grey-dark !important
+        color: $TT-white !important
+        border-color: $TT-grey-dark !important
+
+    // Color preset cards
+    .palette
+        box-shadow: 0px 4px 0px 0px $TT-grey !important
+    .palette:not(.theme-click):hover
+        box-shadow: 0px 8px 0px 0px $TT-grey !important
+    .palette:active, .theme-click
+        box-shadow: 0px 0px 0px 0px transparent !important
+
+    // Language select
+    .select:not(.is-multiple):not(.is-loading)::after
+        border-color: $TT-blue-light !important
+    .select:not(.is-multiple):not(.is-loading)::after:hover
+        border-color: $TT-blue-light !important
+    .select select:hover, .select select:active, .select select:focus, option:hover
+        border-color: $TT-blue !important
+
+    // Calendar
+    .fc-theme-standard .fc-scrollgrid
+        border: 1px solid $TT-grey-light !important
+    .fc-view-harness
+        background-color: $TT-grey-dark !important
+    .fc-col-header-cell-cushion
+        color: $TT-grey-lighter !important
+    .fc-daygrid-day-number
+        color: $TT-blue-light !important
+    .fc-daygrid-day-number:hover
+        background-color: $TT-blue-dark !important
+    .fc-day-today
+        background-color: $TT-blue-dark !important
+    .fc-day-today .fc-daygrid-day-number
+        color: $TT-blue-lighter !important
+        font-weight: bold !important
+    .fc-day-today .fc-daygrid-day-number:hover
+        background-color: $TT-blue-light !important
+    .fc-daygrid-event-harness a:hover
+        background-color: $TT-green-dark !important
+    .fc-list
+        border: 1px solid $TT-black !important
+    .fc-list-empty, .fc-scroller.fc-scroller-liquid
+        background-color: $TT-grey-dark !important
+    .fc-list-empty-cushion
+        color: $TT-grey-lighter !important
+    .fc-theme-standard .fc-list-day-cushion, .fc-event .fc-list-event-graphic, .fc-event .fc-list-event-title
+        background: $TT-grey !important
+    .fc-list-event-title
+        color: $TT-white !important
+    .fc-list-day-text, .fc-list-day-side-text
+        color: $TT-blue-light !important
+
+    // User settings
+    #user-form.box
+        background-color: $TT-grey-darker !important
+
+        .input
+            background-color: $TT-grey-dark !important
+            border-color: $TT-blue !important
+        .input:read-only
+            border-color: transparent !important
+        .input[disabled]
+            color: $TT-grey-light !important
+        .edit-user.button
+            background-color: $TT-grey-dark !important
+            color: $TT-white !important
+            border-color: $TT-grey-light !important
+        .label
+            color: $TT-grey-lighter !important
+        button.button:not(.is-danger)
+            background-color: $TT-grey-dark !important
+            border-color: $TT-grey-light !important
+            color: $TT-white !important
+
+    // Verification message
+    .navbar.is-warning, .columns
+        a:hover
+            background-color: transparent !important
+
+    // Mobile menu
+    .router-link-active
+        background-color: $TT-grey-darker !important
+    .router-link-active:hover
+        background-color: $TT-grey !important
+
+    @include md-breakpoint
+        .app .menu-active ul
+            background-color: $TT-grey-dark !important
+
+.high-contrast-theme
+    $TT-black: black
+    $TT-white: white
+
+    $TT-blue: blue
+    $TT-blue-light: cyan
+    $TT-green: #00a100
+    $TT-green-light: lime
+    $TT-red: red
+    $TT-yellow: yellow
+
+    background-color: $TT-black !important
+
+    // Font color
+    h1, h2, h3, h4, h5, h6, .menu-list, .menu-list a, .menu-label, .title, .modal-card-title, .modal-card-body .label, .input
+        color: $TT-white !important
+    p
+        color: $TT-white !important
+    .input::placeholder
+        color: $TT-green-light !important
+
+    // Side menu, modal and color presets cards
+    .menu-list:hover, a:hover, .router-link-active, .modal-card-head, .modal-card-foot, .input, .ajs-header, .ajs-footer
+        background-color: $TT-black !important
+        color: $TT-yellow !important
+        box-shadow: inset 0 0 0px 2px $TT-white !important
+    .modal-card-body, .modal-card-foot .button, .select select, .ajs-dialog
+        color: $TT-white !important
+        background-color: $TT-black !important
+        box-shadow: inset 0 0 0px 2px $TT-white !important
+
+    // Tasks
+    .vc-container
+        --white: black !important
+
+        .vc-header .vc-title
+            color: $TT-white !important
+
+        .vc-arrow
+            color: $TT-white !important
+
+        .vc-arrow:hover
+            color: $TT-black !important
+        .vc-weeks .vc-weekday
+            color: $TT-white !important
+
+        .vc-day-content
+            color: $TT-blue-light !important
+
+        .is-today .vc-day-content
+            background-color: $TT-blue !important
+            color: $TT-white !important
+
+        .vc-highlight
+            background-color: $TT-red !important
+
+    .card, .grab .fas .fa-solid .fa-grip-lines
+        color: $TT-white !important
+    .task-misc .card-header-icon .date
+        color: $TT-white !important
+
+    // Kanban
+    .card
+        background-color: $TT-black !important
+        box-shadow: inset 0 0 0px 2px $TT-white !important
+    .item
+        background-color: $TT-black !important
+        box-shadow: inset 0 0 0px 2px $TT-white !important
+    .kanban-column
+        border: 1px solid $TT-white !important
+    .column-title
+        background-color: $TT-black !important
+    .card textarea
+        color: $TT-white !important
+    a.dropdown-item.is-active, button.dropdown-item.is-active
+        background-color: $TT-blue !important
+        font-weight: bold !important
+    .card .textarea:not(:disabled)
+        color: $TT-black !important
+        background-color: $TT-white !important
+    .textarea.kanban-text::placeholder
+        color: $TT-green-light !important
+    .textarea.kanban-text:not(:disabled)::placeholder
+        color: $TT-black !important
+    .kanban-action strong, .kanban__quantity
+        color: $TT-white !important
+    .icon.is-clickable .fas.fa-xmark
+        color: $TT-white !important
+    .vc-twitter
+        background-color: $TT-black !important
+        box-shadow: inset 0 0 0px 2px $TT-white !important
+    .vc-input__input
+        background-color: $TT-black !important
+        color: $TT-white !important
+    .vc-twitter-hash
+        background-color: $TT-white !important
+        color: $TT-black !important
+        font-weight: bold !important
+    .vc-editable-input input
+        box-shadow: inset 0 0 0 1px $TT-white !important
+        color: $TT-yellow !important
+
+    .drop-preview
+        position: relative
+        margin: 10px
+        background-color: $TT-black !important
+        border: 2px dashed $TT-white !important
+        border-radius: 4px
+
+    // Buttons
+    .button.is-primary
+        background-color: $TT-blue !important
+    .button.is-success.is-light
+        background-color: $TT-green !important
+        color: $TT-white !important
+    .button.is-danger.is-light
+        background-color: $TT-red !important
+        color: $TT-white !important
+    .button.is-primary.is-light
+        background-color: $TT-blue-light !important
+        color: $TT-black !important
+    .button.is-success
+        background-color: $TT-green !important
+    .fa-inverse
+        color: $TT-white !important
+    .column:hover .fa-inverse
+        color: $TT-black !important
+    .fc-button
+        background-color: $TT-blue !important
+
+    // Add, edit and delete icons
+    .has-text-danger
+        color: $TT-red !important
+    .has-text-success
+        color: $TT-green-light !important
+    .has-text-info
+        color: $TT-blue-light !important
+
+    .tag.is-danger
+        background-color: $TT-red !important
+    .tag.is-success
+        background-color: $TT-green !important
+    // Color preset cards
+    .palette
+        box-shadow: 0px 4px 0px 0px $TT-white, inset 0 0 0px 2px $TT-white !important
+        background-color: $TT-black !important
+    .palette:not(.theme-click):hover
+        box-shadow: 0px 8px 0px 0px $TT-white, inset 0 0 0px 2px $TT-white !important
+    .palette:active, .theme-click
+        box-shadow: 0px 0px 0px 0px transparent, inset 0 0 0px 2px $TT-yellow !important
+
+    // Language select
+    .select:not(.is-multiple):not(.is-loading)::after
+        border-color: $TT-white !important
+    .select:not(.is-multiple):not(.is-loading)::after:hover
+        border-color: $TT-blue-light !important
+    .select select:hover, .select select:active, .select select:focus, option:hover
+        border-color: $TT-yellow !important
+
+    .columns a
+        color: $TT-blue !important
+    .columns a:hover
+        color: $TT-yellow !important
+
+    // Calendar
+    .fc-event
+        background-color: $TT-green !important
+        font-weight: bold !important
+    .fc-view-harness
+        background-color: $TT-black !important
+    .fc-col-header-cell-cushion
+        color: $TT-white !important
+    .fc-daygrid-day-number
+        color: $TT-blue-light !important
+    .fc-day-today
+        background-color: $TT-white !important
+    .fc-day-today .fc-daygrid-day-number
+        color: $TT-black !important
+        font-weight: bold !important
+    .fc-day-today .fc-daygrid-day-number:hover
+        color: $TT-white !important
+    .fc-daygrid-event-harness a:hover
+        background-color: $TT-green !important
+    .fc-list
+        border: 1px solid $TT-black !important
+    .fc-list-empty, .fc-scroller.fc-scroller-liquid
+        background-color: $TT-black !important
+        box-shadow: inset 0 0 0px 2px $TT-white !important
+    .fc-list-empty-cushion
+        color: $TT-black !important
+    .fc-list-day-cushion.fc-cell-shaded, .fc-event
+        background-color: $TT-black !important
+        box-shadow: inset 0 0 0px 2px $TT-white !important
+    .fc-theme-standard .fc-list-day-cushion, .fc-event .fc-list-event-graphic, .fc-event .fc-list-event-title
+        background: transparent !important
+    .fc-list-event-title
+        color: $TT-white !important
+    .fc-list-day-text, .fc-list-day-side-text
+        color: $TT-blue !important
+
+    // User settings
+    .profile-container .uploadBtn
+        color: $TT-yellow !important
+    #user-form.box
+        background-color: $TT-black !important
+        box-shadow: inset 0 0 0px 2px $TT-white !important
+
+        .profile-pic-div
+            box-shadow: 0 0 0px 2px $TT-white !important
+        .input:not(read-only)
+            border-color: $TT-yellow !important
+            box-shadow: inset 0 0 0px 2px $TT-yellow !important
+        .input:read-only
+            border-color: $TT-white !important
+            box-shadow: inset 0 0 0px 2px $TT-white !important
+        .input[disabled]
+            color: $TT-red !important
+            box-shadow: inset 0 0 0px 2px $TT-white !important
+        .edit-user.button
+            background-color: $TT-white !important
+            color: $TT-black !important
+            border-color: $TT-white !important
+        .label
+            color: $TT-white !important
+        button.button:not(.is-danger)
+            background-color: $TT-black !important
+            border-color: $TT-black !important
+            color: $TT-white !important
+            box-shadow: inset 0 0 0px 2px $TT-white !important
+
+    // Verification message
+    .navbar.is-warning
+        background-color: $TT-white !important
+        color: $TT-black !important
+
+    // Mobile menu
+    .app .menu ul
+        background-color: $TT-black !important
+
+        @include sm-breakpoint
+            box-shadow: inset 0 0 0px 2px $TT-white !important
+
+// Themes palettes
+.presets-container
+    width: 100%
+    max-width: calc(($color-palette-width + $color-palette-gap) * 4)
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax($color-palette-width, 1fr))
+    gap: $color-palette-gap
+
+.palette
+    padding: 15px
+    border-radius: 2%
+    user-select: none
+    transition: 0.2s
+    width: $color-palette-width
+    height: fit-content
+    cursor: pointer
+    background-color: #e7e7e7
+    box-shadow: 0px 4px 0px 0px #bdbdbd
+
+    &:hover
+        box-shadow: 0px 8px 0px 0px #bdbdbd
+        transform: translateY(-4px)
+    &:active
+        box-shadow: 0px 0px 0px 0px transparent
+        transform: translateY(4px)
+
+.colors
+    width: 100%
+    height: 100px
+    display: flex
+    margin-bottom: 10px
+
+.color-block
+    width: 30px
+    transition: 0.3s
+    &:hover
+        transform: scale(1.05)
+
+.palette .title
+    font-size: 18px !important

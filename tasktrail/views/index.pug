@@ -1,0 +1,89 @@
+extends layout
+
+block content
+    header.hero.is-fullheight
+        .hero-video
+            video(playsinline autoplay="autoplay" muted loop)
+                source(src="/media/videos/hero.mp4" type="video/mp4")
+
+        .hero-body.has-text-white
+            .container.has-text-centered.is-size-5
+                h1.is-size-3-mobile.is-size-1-desktop.has-text-weight-semibold.mb-5= __("index.header.title")
+                .columns.is-centered.mb-5
+                    .column.is-half
+                        h2.is-size-6-mobile.is-size-4-desktop= __("index.header.subtitle")
+                a(href="/signup").button.is-primary.is-rounded.has-text-weight-semibold.is-size-5-mobile.is-size-4-desktop= __("index.header.button")
+
+        .hero-footer
+            figure.image
+                img(src="/media/images/wave.svg" alt="Wave" draggable="false")
+
+    div
+        .has-text-centered.mb-5
+            h2.title.is-size-4-mobile.is-size-3-desktop #{__("index.main.downloads.title")}:
+
+            .level.has-text-centered
+                .level-item.has-background-link-light
+                    div.py-5
+                        .heading.is-size-6 
+                            i.fa-brands.fa-windows.mr-2
+                            span Windows
+
+                        a.button.is-rounded.is-link.is-outlined(href="/download")
+                            i.fa-solid.fa-download.mr-2
+                            span= __("index.main.downloads.button")
+
+                .level-item.has-background-danger-light
+                    div.py-5
+                        .heading.is-size-6 
+                            i.fa-brands.fa-apple.mr-2
+                            span MacOS
+                        a.button.is-rounded.is-danger.is-outlined(href="/download")
+                            i.fa-solid.fa-download.mr-2
+                            span= __("index.main.downloads.button")
+
+                .level-item.has-background-success-light
+                    div.py-5
+                        .heading.is-size-6 
+                            i.fa-brands.fa-linux.mr-2
+                            span Linux
+                        a.button.is-rounded.is-success.is-outlined(href="/download")
+                            i.fa-solid.fa-download.mr-2
+                            span= __("index.main.downloads.button")
+
+    div
+        .feature.p-5.is-flex.is-justify-content-center
+            .columns.is-vcentered.is-fit-content.mx-6-desktop.px-6-desktop.feature-content
+                .column.is-flex.is-justify-content-center
+                    figure.image
+                        img(src="media/images/mobile-support.svg" alt="Accesible en moviles" draggable="false")
+                .column
+                    h2.title.is-size-4-mobile.is-size-3-desktop= __("index.main.blocks.accesibility.title")
+                    p.subtitle.is-size-6-mobile.is-size-5-desktop= __("index.main.blocks.accesibility.description")
+
+        .feature.p-5.has-background-primary-light.is-flex.is-justify-content-center
+            .columns.is-vcentered.is-flex-direction-row-reverse.is-fit-content.mx-6-desktop.px-6-desktop.feature-content
+                .column.is-flex.is-justify-content-center
+                    figure.image
+                        img(src="media/images/interface.svg" alt="Interfaz intuitiva y sencilla" draggable="false")
+                .column.has-text-right.has-text-left-touch
+                    h2.title.is-size-4-mobile.is-size-3-desktop= __("index.main.blocks.interface.title")
+                    p.subtitle.is-size-6-mobile.is-size-5-desktop= __("index.main.blocks.interface.description")
+
+        .feature.p-5.is-flex.is-justify-content-center
+            .columns.is-vcentered.is-fit-content.mx-6-desktop.px-6-desktop.feature-content
+                .column.is-flex.is-justify-content-center
+                    figure.image
+                        img(src="media/images/customizable.svg" alt="Personalizable y adaptable" draggable="false")
+                .column
+                    h2.title.is-size-4-mobile.is-size-3-desktop= __("index.main.blocks.customization.title")
+                    p.subtitle.is-size-6-mobile.is-size-5-desktop= __("index.main.blocks.customization.description")
+
+        .section.has-background-primary.has-text-centered
+            h2.title.is-size-4-mobile.is-size-3-desktop.has-text-white= __("index.main.cta.title")
+            a(href="/signup").button.is-white.is-outlined.is-rounded.is-size-5= __("index.main.cta.button")
+
+block footer 
+    include footer
+
+    include cookies
