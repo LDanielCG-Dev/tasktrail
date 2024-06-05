@@ -38,4 +38,4 @@ $ npm run build:dev
 ```
 
 ## People
-This project was developed by [byeejasonn](https://github.com/byeejasonn), [LDanielCG](https://github.com/LDanielCG) and [icutum](https://github.com/icutum), three spanish students of the vocational course of Web Application Development for our final degree work.
+This project was developed by [byeejasonn](https://github.com/byeejasonn), [LDanielCG-Dev](https://github.com/LDanielCG-Dev) and [icutum](https://github.com/icutum), three spanish students of the vocational course of Web Application Development for our final degree work.
